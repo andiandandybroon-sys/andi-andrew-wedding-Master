@@ -262,3 +262,53 @@ dd { margin: 0; color: rgba(255,255,255,.82); }
 .dietary-fieldset .checkbox-grid label:has(input:checked) { border-color: var(--gold); background: rgba(210,173,103,.08); }
 #dietary-details-wrap { margin-top: 4px; }
 @media (max-width: 620px) { .travel-note { padding: 18px; } }
+
+/* Phase 1 navigation, travel and FAQ updates */
+.site-header {
+  position: fixed;
+  background: linear-gradient(180deg, rgba(8,8,10,.78), rgba(8,8,10,.18));
+  transition: background .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.site-header.is-scrolled {
+  background: rgba(8,8,10,.94);
+  backdrop-filter: blur(16px);
+  border-bottom-color: rgba(240,206,139,.18);
+  box-shadow: 0 12px 35px rgba(0,0,0,.18);
+}
+.site-header nav a:not(.nav-cta) { position: relative; color: rgba(246,240,231,.78); transition: color .2s ease; }
+.site-header nav a:not(.nav-cta)::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 1px; background: var(--gold-bright); transform: scaleX(0); transition: transform .2s ease; }
+.site-header nav a:hover, .site-header nav a.active { color: var(--gold-bright); }
+.site-header nav a.active::after { transform: scaleX(1); }
+.dietary-note { margin-top: 24px; padding: 18px 20px; border-left: 2px solid var(--gold); background: rgba(255,255,255,.035); color: var(--muted); border-radius: 0 14px 14px 0; }
+.dietary-note strong { color: var(--ivory); }
+.travel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 22px; }
+.travel-grid div { padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(0,0,0,.14); }
+.travel-grid h4 { margin: 0 0 6px; color: var(--gold-bright); font-size: .76rem; text-transform: uppercase; letter-spacing: .12em; }
+.travel-grid p, .parking-note { margin: 0; color: var(--muted); font-size: .88rem; }
+.parking-note { margin-top: 18px; }
+.parking-note strong { color: var(--ivory); }
+.travel-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+.faq-section { background: linear-gradient(145deg, #111014, #08080a 70%); }
+.faq-shell { padding: 130px 0; }
+.faq-heading { max-width: 760px; margin: 0 auto 52px; text-align: center; }
+.faq-list { max-width: 900px; margin: 0 auto; border-top: 1px solid var(--line); }
+.faq-list details { border-bottom: 1px solid var(--line); }
+.faq-list summary { list-style: none; cursor: pointer; padding: 24px 48px 24px 0; position: relative; font-family: "Cormorant Garamond", serif; font-size: clamp(1.5rem, 3vw, 2.1rem); }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); color: var(--gold); font-family: "Manrope", sans-serif; font-size: 1.4rem; }
+.faq-list details[open] summary::after { content: "–"; }
+.faq-list details p { margin: -6px 0 24px; max-width: 760px; color: var(--muted); }
+.back-to-top { position: fixed; z-index: 60; right: 22px; bottom: 22px; display: inline-flex; gap: 8px; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid rgba(240,206,139,.45); border-radius: 999px; background: rgba(8,8,10,.9); backdrop-filter: blur(12px); color: var(--ivory); text-decoration: none; text-transform: uppercase; letter-spacing: .1em; font-size: .64rem; font-weight: 700; opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity .2s ease, visibility .2s ease, transform .2s ease; }
+.back-to-top.visible { opacity: 1; visibility: visible; transform: none; }
+.back-to-top:hover { border-color: var(--gold-bright); color: var(--gold-bright); }
+
+@media (max-width: 900px) {
+  .site-header nav a:not(.nav-cta)::after { bottom: -5px; transform-origin: left; }
+  .travel-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .faq-shell { padding: 90px 0; }
+  .faq-list summary { padding-right: 38px; }
+  .back-to-top { right: 14px; bottom: 14px; width: 46px; padding: 0; justify-content: center; font-size: 1rem; }
+  .back-to-top span { display: none; }
+}

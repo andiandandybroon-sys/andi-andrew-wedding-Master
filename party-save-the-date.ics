@@ -8,9 +8,10 @@ UID:andi-andrew-edinburgh-20270522@example.com
 DTSTAMP:20260720T000000Z
 DTSTART:20270522T173000Z
 DTEND:20270523T000000Z
-SUMMARY:Andi & Andrew - Edinburgh Celebration
+SUMMARY:Andi and Andrew's Wedding Celebration
 LOCATION:Edinburgh Accies, Raeburn Place, Stockbridge, Edinburgh
-DESCRIPTION:What happens in Vegas is coming to Edinburgh. Arrival from 6:30 PM.
+URL:https://andi-andrew-wedding-master.vercel.app/
+DESCRIPTION:Join us for a glamorous night at the casino with a Scottish twist. Dress to impress. Tuxedos, suits, formal dresses and kilts are all very welcome. Arrival from 6:30 PM and finish at approximately 1:00 AM.
 STATUS:CONFIRMED
 END:VEVENT
 END:VCALENDAR
