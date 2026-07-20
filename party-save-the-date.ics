@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Andi and Andrew//Edinburgh Celebration//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:andi-andrew-edinburgh-20270522@example.com
+DTSTAMP:20260720T000000Z
+DTSTART:20270522T173000Z
+DTEND:20270523T000000Z
+SUMMARY:Andi & Andrew - Edinburgh Celebration
+LOCATION:Edinburgh Accies, Raeburn Place, Stockbridge, Edinburgh
+DESCRIPTION:What happens in Vegas is coming to Edinburgh. Arrival from 6:30 PM.
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

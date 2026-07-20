@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RSVP for Andi and Andrew's Edinburgh celebration.">
+  <meta name="theme-color" content="#08080a">
+  <title>RSVP | Andi & Andrew</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#rsvp-form">Skip to RSVP form</a>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header compact-header"><a class="brand" href="index.html">A <span>&amp;</span> A</a><a class="back-link" href="index.html">Back to the celebration</a></header>
+
+  <main class="rsvp-main">
+    <section class="rsvp-hero">
+      <img src="assets/images/invitation-desk.jpg" alt="Elegant invitations, champagne and flowers">
+      <div class="rsvp-hero-overlay"></div>
+      <div class="rsvp-intro reveal"><p class="eyebrow">22 May 2027 · Edinburgh</p><h1>Will you be joining us?</h1><p>Arrival is from <strong>6:30 PM</strong> at Edinburgh Accies, Raeburn Place.</p><div class="demo-notice" role="note"><strong>Front-end demonstration</strong><p>This form is not yet connected to a database or form service. Submitting it only saves a preview in this browser; nothing is sent to Andi or Andrew.</p></div></div>
+    </section>
+
+    <section class="section-shell rsvp-panel">
+      <aside class="rsvp-note reveal"><p class="eyebrow">Your reply</p><h2>We hope you can make it.</h2><p>The questions below are ready for review. Once agreed, the form can be connected to a real response service.</p></aside>
+
+      <div>
+        <form class="rsvp-form reveal" id="rsvp-form">
+          <fieldset><legend>Attendance</legend>
+            <label class="choice-card"><input type="radio" name="attendance" value="Yes" required><span><strong>Happily attending</strong><small>Count me in for the celebration.</small></span></label>
+            <label class="choice-card"><input type="radio" name="attendance" value="No" required><span><strong>Sadly unable to attend</strong><small>I will be celebrating from afar.</small></span></label>
+          </fieldset>
+
+          <div class="form-grid">
+            <label><span>Full name</span><input type="text" name="name" autocomplete="name" required></label>
+            <label><span>Email address</span><input type="email" name="email" autocomplete="email" required></label>
+          </div>
+
+          <div class="form-grid"><label><span>Number attending</span><select name="guestCount"><option value="1">1 person</option><option value="2">2 people</option><option value="3">3 people</option><option value="4">4 people</option><option value="5">5 people</option><option value="6">6 people</option></select></label><label><span>Other guest names</span><input type="text" name="guest" placeholder="Leave blank if attending alone"></label></div>
+
+          <label><span>Dietary requirements</span><textarea name="dietary" rows="3" placeholder="Please include allergies, intolerances or dietary preferences for everyone in your party"></textarea></label>
+
+          <label><span>Message for Andi &amp; Andrew <small>(optional)</small></span><textarea id="message" name="message" rows="5" maxlength="500"></textarea><small class="character-count"><span id="message-count">0</span>/500</small></label>
+          <button class="button button-primary form-submit" type="submit">Preview my reply</button>
+          <p class="form-help">No information is transmitted or stored online in this demonstration.</p>
+        </form>
+
+        <section class="thank-you-panel" id="thank-you" hidden>
+          <p class="eyebrow">Demo complete</p><h2>Thank you, <span id="saved-name">guest</span>.</h2><p>Your response has been saved in this browser as a preview only. No response was transmitted to Andi or Andrew.</p><button class="button button-ghost" id="edit-response" type="button">Edit response</button>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Andi & Andrew</span><span>Edinburgh · 2027</span></footer>
+  <script src="script.js"></script>
+  <script src="rsvp.js"></script>
+</body>
+</html>
