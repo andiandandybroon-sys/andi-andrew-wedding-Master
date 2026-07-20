@@ -40,7 +40,17 @@
 
           <div class="form-grid"><label><span>Number attending</span><select name="guestCount"><option value="1">1 person</option><option value="2">2 people</option><option value="3">3 people</option><option value="4">4 people</option><option value="5">5 people</option><option value="6">6 people</option></select></label><label><span>Other guest names</span><input type="text" name="guest" placeholder="Leave blank if attending alone"></label></div>
 
-          <label><span>Dietary requirements</span><textarea name="dietary" rows="3" placeholder="Please include allergies, intolerances or dietary preferences for everyone in your party"></textarea></label>
+          <fieldset class="dietary-fieldset">
+            <legend>Dietary requirements</legend>
+            <p class="fieldset-help">Select any that apply to your party.</p>
+            <div class="checkbox-grid" id="dietary-options">
+              <label><input type="checkbox" name="dietaryType" value="Vegetarian"><span>Vegetarian</span></label>
+              <label><input type="checkbox" name="dietaryType" value="Food allergy or intolerance"><span>Food allergy or intolerance</span></label>
+              <label><input type="checkbox" name="dietaryType" value="Other dietary requirement"><span>Other dietary requirement</span></label>
+              <label><input type="checkbox" name="dietaryType" value="None"><span>None</span></label>
+            </div>
+            <label id="dietary-details-wrap" hidden><span>Please provide details</span><textarea name="dietaryDetails" rows="3" placeholder="Include the guest name and details of any allergy, intolerance or dietary requirement"></textarea></label>
+          </fieldset>
 
           <label><span>Message for Andi &amp; Andrew <small>(optional)</small></span><textarea id="message" name="message" rows="5" maxlength="500"></textarea><small class="character-count"><span id="message-count">0</span>/500</small></label>
           <button class="button button-primary form-submit" type="submit">Preview my reply</button>

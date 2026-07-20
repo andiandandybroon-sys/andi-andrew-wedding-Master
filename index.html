@@ -19,10 +19,11 @@
     <a class="brand" href="#top" aria-label="Andi and Andrew home">A <span>&amp;</span> A</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#top">Home</a>
       <a href="#celebration">The night</a>
       <a href="#entertainment">Entertainment</a>
       <a href="#food">Food & drink</a>
-      <a href="#details">Details</a>
+      <a href="#details">Venue &amp; details</a>
       <a class="nav-cta" href="rsvp.html">RSVP</a>
     </nav>
   </header>
@@ -67,7 +68,7 @@
     <section class="feature" aria-labelledby="casino-title">
       <img src="assets/images/casino-room.jpg" alt="Guests enjoying casino tables at an elegant celebration" loading="lazy">
       <div class="feature-shade"></div>
-      <div class="feature-copy reveal"><p class="eyebrow">Place your bets</p><h2 id="casino-title">The Vegas casino</h2><p>Roulette, blackjack and more, played for fun, bragging rights and the glory of leaving the table on top. The tables will be open through the early evening.</p></div>
+      <div class="feature-copy reveal"><p class="eyebrow">Place your bets</p><h2 id="casino-title">The Vegas casino</h2><p>Roulette, blackjack and more, played for fun, bragging rights and the glory of leaving the table on top. The tables will open in the early evening, with plenty of time to try your luck before the live music begins.</p></div>
     </section>
 
     <section class="cards-grid section-shell" id="entertainment">
@@ -76,25 +77,13 @@
       <article class="image-card reveal"><img src="assets/images/magician.jpg" alt="Magician performing a card trick" loading="lazy"><div><span>Close-up magic</span><p>Starting from 6:30 PM, expect the impossible right in front of you.</p></div></article>
     </section>
 
-<section class="music-section" id="music">
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="auto"
-    poster="assets/images/rollin-drones-stage.jpg">
-    <source src="assets/video/rollin-drones.mp4" type="video/mp4">
-  </video>
-
-  <div class="music-overlay"></div>
-
-  <div class="music-copy reveal">
-    <p class="eyebrow">Live from 9:00 PM</p>
-    <h2>The Rollin Drones</h2>
-    <p>Bagpipes, big tunes and the kind of energy that keeps the dance floor full.</p>
-  </div>
-</section>
+    <section class="music-section" id="music" aria-labelledby="band-title">
+      <video autoplay muted loop playsinline preload="auto" poster="assets/images/rollin-drones-stage.jpg">
+        <source src="assets/video/rollin-drones.mp4" type="video/mp4">
+      </video>
+      <div class="music-overlay"></div>
+      <div class="music-copy reveal"><p class="eyebrow">Live from 9:00 PM</p><h2 id="band-title">The Rollin Drones</h2><p>Bagpipes, big tunes and the kind of energy that keeps the dance floor full.</p></div>
+    </section>
 
     <section class="band-gallery section-shell">
       <figure class="reveal"><img src="assets/images/rollin-drones-bagpipe.jpg" alt="Rollin Drones bagpiper performing on stage" loading="lazy"></figure>
@@ -102,7 +91,7 @@
     </section>
 
     <section class="split-section section-shell" id="food">
-      <div class="split-copy reveal"><p class="eyebrow">Eat, drink, celebrate</p><h2>American flavours and proper cocktails.</h2><p>Build-your-own burgers, hot dogs, chicken wings, skewers, salads and all the sides, alongside a lively bar and plenty of reasons to stay for one more round.</p></div>
+      <div class="split-copy reveal"><p class="eyebrow">Eat, drink, celebrate</p><h2>American flavours and proper cocktails.</h2><p>Build-your-own meat and vegetarian burgers, meat and vegetarian hot dogs, BBQ, hot and spicy or sticky chicken wings, chicken and vegetable skewers, potato salad, summer salads and coleslaw, alongside a lively bar and plenty of reasons to stay for one more round.</p></div>
       <div class="split-gallery">
         <article class="reveal"><img src="assets/images/american-buffet.jpg" alt="American-style buffet" loading="lazy"><span>American-style buffet</span></article>
         <article class="reveal"><img src="assets/images/cocktail-bar.jpg" alt="Cocktail bar serving colourful drinks and champagne" loading="lazy"><span>Cocktails & champagne</span></article>
@@ -139,9 +128,14 @@
             <div><dt>Venue</dt><dd>Edinburgh Accies</dd></div>
             <div><dt>Location</dt><dd>Raeburn Place, Stockbridge, Edinburgh</dd></div>
             <div><dt>Arrival</dt><dd>From 6:30 PM</dd></div>
-            <div><dt>Dress</dt><dd>Dress to celebrate</dd></div>
+            <div><dt>Finish</dt><dd>Approximately 1:00 AM</dd></div>
+            <div><dt>Dress</dt><dd>Party-ready — suits, dresses and your best night-out look. No black tie required.</dd></div>
           </dl>
           <div class="details-actions"><a class="button button-primary" href="rsvp.html">Confirm attendance</a><a class="button button-ghost" href="https://www.google.com/maps/search/?api=1&query=Edinburgh+Academical+Football+Club+Raeburn+Place" target="_blank" rel="noopener">Open in Maps</a><a class="button button-ghost" href="party-save-the-date.ics" download>Add to calendar</a></div>
+          <div class="travel-note" aria-labelledby="travel-title">
+            <h3 id="travel-title">Getting there</h3>
+            <p>Edinburgh Accies is on Raeburn Place in Stockbridge. Public transport or a taxi is recommended, particularly if you plan to enjoy the bar. Please check your route and arrange your return journey in advance.</p>
+          </div>
         </div>
         <figure class="details-image reveal"><img src="assets/images/guest-arrival.jpg" alt="Well-dressed guests arriving at an evening celebration" loading="lazy"><figcaption>Stockbridge, Edinburgh</figcaption></figure>
       </div>

@@ -250,3 +250,15 @@ dd { margin: 0; color: rgba(255,255,255,.82); }
   .timeline li { grid-template-columns: 1fr; gap: 6px; }
 }
 
+
+/* Practical details and dietary updates */
+.travel-note { margin-top: 32px; padding: 22px 24px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.035); }
+.travel-note h3 { margin: 0 0 8px; font-family: "Cormorant Garamond", serif; font-size: 2rem; font-weight: 600; }
+.travel-note p { margin: 0; color: var(--muted); }
+.dietary-fieldset { display: grid; gap: 14px; }
+.fieldset-help { margin: -4px 0 0; color: var(--muted); font-size: .86rem; }
+.dietary-fieldset .checkbox-grid label { cursor: pointer; transition: border-color .2s ease, background .2s ease; }
+.dietary-fieldset .checkbox-grid label:hover { border-color: rgba(240,206,139,.5); }
+.dietary-fieldset .checkbox-grid label:has(input:checked) { border-color: var(--gold); background: rgba(210,173,103,.08); }
+#dietary-details-wrap { margin-top: 4px; }
+@media (max-width: 620px) { .travel-note { padding: 18px; } }

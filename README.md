@@ -32,3 +32,13 @@ The countdown and calendar are set for 6:30 PM British Summer Time on 22 May 202
 - The Rollin Drones: 9:00 PM
 
 The schedule wording can be updated later when food and finishing times are confirmed.
+
+
+## Current content updates
+- Home navigation link and clearer Venue & details label
+- Confirmed BBQ buffet menu wording
+- Approximate 1:00 AM finish time
+- Party-ready dress guidance
+- Compact transport guidance
+- Structured dietary requirement checkboxes with a conditional details field
+- Rollin Drones video restored to muted autoplay with a browser fallback
