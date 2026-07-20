@@ -41,15 +41,21 @@
           <div class="form-grid"><label><span>Number attending</span><select name="guestCount"><option value="1">1 person</option><option value="2">2 people</option><option value="3">3 people</option><option value="4">4 people</option><option value="5">5 people</option><option value="6">6 people</option></select></label><label><span>Other guest names</span><input type="text" name="guest" placeholder="Leave blank if attending alone"></label></div>
 
           <fieldset class="dietary-fieldset">
-            <legend>Dietary requirements</legend>
-            <p class="fieldset-help">Select any that apply to your party.</p>
-            <div class="checkbox-grid" id="dietary-options">
+            <legend>Do you have any dietary requirements?</legend>
+            <p class="fieldset-help">Please select all that apply to your party.</p>
+            <div class="checkbox-grid dietary-options" id="dietary-options">
+              <label><input type="checkbox" name="dietaryType" value="None"><span>No dietary requirements</span></label>
               <label><input type="checkbox" name="dietaryType" value="Vegetarian"><span>Vegetarian</span></label>
-              <label><input type="checkbox" name="dietaryType" value="Food allergy or intolerance"><span>Food allergy or intolerance</span></label>
-              <label><input type="checkbox" name="dietaryType" value="Other dietary requirement"><span>Other dietary requirement</span></label>
-              <label><input type="checkbox" name="dietaryType" value="None"><span>None</span></label>
+              <label><input type="checkbox" name="dietaryType" value="Vegan"><span>Vegan</span></label>
+              <label><input type="checkbox" name="dietaryType" value="Gluten-free"><span>Gluten-free</span></label>
+              <label><input type="checkbox" name="dietaryType" value="Dairy-free"><span>Dairy-free</span></label>
+              <label><input type="checkbox" name="dietaryType" value="Nut allergy"><span>Nut allergy</span></label>
+              <label class="checkbox-wide"><input type="checkbox" name="dietaryType" value="Other allergy or dietary requirement"><span>Other allergy or dietary requirement</span></label>
             </div>
-            <label id="dietary-details-wrap" hidden><span>Please provide details</span><textarea name="dietaryDetails" rows="3" placeholder="Include the guest name and details of any allergy, intolerance or dietary requirement"></textarea></label>
+            <label id="dietary-details-wrap" hidden>
+              <span>Please provide further details, including the severity of any allergy</span>
+              <textarea name="dietaryDetails" rows="4" placeholder="Add any allergy, intolerance or cross-contamination information here."></textarea>
+            </label>
           </fieldset>
 
           <label><span>Message for Andi &amp; Andrew <small>(optional)</small></span><textarea id="message" name="message" rows="5" maxlength="500"></textarea><small class="character-count"><span id="message-count">0</span>/500</small></label>

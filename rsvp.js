@@ -23,11 +23,14 @@ function updateDietaryFields(changedCheckbox) {
   }
 
   const selected = dietaryCheckboxes.filter((box) => box.checked).map((box) => box.value);
-  const needsDetails = selected.some((value) => value !== "None");
-  if (dietaryDetailsWrap) dietaryDetailsWrap.hidden = !needsDetails;
+  const needsDetails = selected.includes("Nut allergy") || selected.includes("Other allergy or dietary requirement");
+  const showDetails = selected.some((value) => value !== "None");
+
+  if (dietaryDetailsWrap) dietaryDetailsWrap.hidden = !showDetails;
   if (dietaryDetails) {
     dietaryDetails.required = needsDetails;
-    if (!needsDetails) dietaryDetails.value = "";
+    dietaryDetails.setCustomValidity("");
+    if (!showDetails) dietaryDetails.value = "";
   }
 }
 
@@ -37,6 +40,17 @@ updateDietaryFields();
 if (form) {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+    const selectedDietary = dietaryCheckboxes.filter((box) => box.checked).map((box) => box.value);
+    const requiresDietaryDetails = selectedDietary.includes("Nut allergy") || selectedDietary.includes("Other allergy or dietary requirement");
+
+    if (dietaryDetails) {
+      dietaryDetails.setCustomValidity(
+        requiresDietaryDetails && !dietaryDetails.value.trim()
+          ? "Please provide details of the allergy or dietary requirement."
+          : ""
+      );
+    }
+
     if (!form.reportValidity()) return;
 
     const formData = new FormData(form);
