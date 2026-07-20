@@ -239,7 +239,6 @@ dd { margin: 0; color: rgba(255,255,255,.82); }
 .timeline time { color: #88692f; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .timeline h3 { margin: 0 0 5px; font-family: "Cormorant Garamond", serif; font-size: 2rem; }
 .timeline p { margin: 0; color: #665e56; }
-.music-section video { cursor: pointer; }
 .demo-notice { margin: 28px auto 0; max-width: 680px; padding: 16px 18px; text-align: left; border: 1px solid rgba(240,206,139,.55); border-radius: 16px; background: rgba(8,8,10,.78); }
 .demo-notice p { margin: 5px 0 0 !important; color: rgba(255,255,255,.72) !important; font-size: .9rem; }
 .rsvp-form select { width: 100%; color: var(--ivory); background: #0e0e12; border: 1px solid rgba(255,255,255,.16); border-radius: 14px; padding: 15px 16px; outline: none; font: inherit; }
@@ -251,20 +250,3 @@ dd { margin: 0; color: rgba(255,255,255,.82); }
   .timeline li { grid-template-columns: 1fr; gap: 6px; }
 }
 
-/* Keep the decorative band overlays from blocking the video controls. */
-.music-overlay,
-.music-copy {
-  pointer-events: none;
-}
-
-.music-section video {
-  z-index: 0;
-}
-
-.music-overlay {
-  z-index: 1;
-}
-
-.music-copy {
-  z-index: 2;
-}
