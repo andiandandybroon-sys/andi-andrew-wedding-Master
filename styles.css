@@ -250,3 +250,21 @@ dd { margin: 0; color: rgba(255,255,255,.82); }
   .schedule-shell { padding: 90px 0; }
   .timeline li { grid-template-columns: 1fr; gap: 6px; }
 }
+
+/* Keep the decorative band overlays from blocking the video controls. */
+.music-overlay,
+.music-copy {
+  pointer-events: none;
+}
+
+.music-section video {
+  z-index: 0;
+}
+
+.music-overlay {
+  z-index: 1;
+}
+
+.music-copy {
+  z-index: 2;
+}
