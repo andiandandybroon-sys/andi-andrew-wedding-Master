@@ -3,74 +3,364 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="RSVP for Andi and Andrew's Edinburgh celebration.">
+
+  <meta
+    name="description"
+    content="RSVP for Andi and Andrew's Edinburgh wedding celebration on 22 May 2027."
+  >
+
   <meta name="theme-color" content="#08080a">
-  <title>RSVP | Andi & Andrew</title>
+
+  <title>RSVP | Andi &amp; Andrew</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#rsvp-form">Skip to RSVP form</a>
+  <a class="skip-link" href="#rsvp-form">
+    Skip to RSVP form
+  </a>
+
   <div class="page-noise" aria-hidden="true"></div>
-  <header class="site-header compact-header"><a class="brand" href="index.html">A <span>&amp;</span> A</a><a class="back-link" href="index.html">Back to the celebration</a></header>
+
+  <header class="site-header compact-header">
+    <a
+      class="brand"
+      href="index.html"
+      aria-label="Return to the wedding website"
+    >
+      A <span>&amp;</span> A
+    </a>
+
+    <a class="back-link" href="index.html#details">
+      Back to the celebration
+    </a>
+  </header>
 
   <main class="rsvp-main">
     <section class="rsvp-hero">
-      <img src="assets/images/invitation-desk.jpg" alt="Elegant invitations, champagne and flowers">
+      <img
+        src="assets/images/invitation-desk.jpg"
+        alt="Elegant invitations, champagne and flowers"
+      >
+
       <div class="rsvp-hero-overlay"></div>
-      <div class="rsvp-intro reveal"><p class="eyebrow">22 May 2027 · Edinburgh</p><h1>Will you be joining us?</h1><p>Arrival is from <strong>6:30 PM</strong> at Edinburgh Accies, Raeburn Place.</p><div class="demo-notice" role="note"><strong>Front-end demonstration</strong><p>This form is not yet connected to a database or form service. Submitting it only saves a preview in this browser; nothing is sent to Andi or Andrew.</p></div></div>
+
+      <div class="rsvp-intro reveal">
+        <p class="eyebrow">
+          22 May 2027 · Edinburgh
+        </p>
+
+        <h1>
+          Will you be joining us?
+        </h1>
+
+        <p>
+          Arrival is from <strong>6:30 PM</strong> at Edinburgh Accies,
+          Raeburn Place. The celebration is expected to finish at
+          approximately <strong>1:00 AM</strong>.
+        </p>
+      </div>
     </section>
 
     <section class="section-shell rsvp-panel">
-      <aside class="rsvp-note reveal"><p class="eyebrow">Your reply</p><h2>We hope you can make it.</h2><p>The questions below are ready for review. Once agreed, the form can be connected to a real response service.</p></aside>
+      <aside class="rsvp-note reveal">
+        <p class="eyebrow">
+          Your reply
+        </p>
+
+        <h2>
+          We hope you can make it.
+        </h2>
+
+        <p>
+          Please complete the form below to let us know whether you will
+          be joining the celebration.
+        </p>
+
+        <p>
+          Please enter the names of everyone attending and include full
+          details of any allergy or dietary requirement.
+        </p>
+      </aside>
 
       <div>
         <form class="rsvp-form reveal" id="rsvp-form">
-          <fieldset><legend>Attendance</legend>
-            <label class="choice-card"><input type="radio" name="attendance" value="Yes" required><span><strong>Happily attending</strong><small>Count me in for the celebration.</small></span></label>
-            <label class="choice-card"><input type="radio" name="attendance" value="No" required><span><strong>Sadly unable to attend</strong><small>I will be celebrating from afar.</small></span></label>
-          </fieldset>
+          <fieldset>
+            <legend>
+              Attendance
+            </legend>
 
-          <div class="form-grid">
-            <label><span>Full name</span><input type="text" name="name" autocomplete="name" required></label>
-            <label><span>Email address</span><input type="email" name="email" autocomplete="email" required></label>
-          </div>
+            <label class="choice-card">
+              <input
+                type="radio"
+                name="attendance"
+                value="yes"
+                required
+              >
 
-          <div class="form-grid"><label><span>Number attending</span><select name="guestCount"><option value="1">1 person</option><option value="2">2 people</option><option value="3">3 people</option><option value="4">4 people</option><option value="5">5 people</option><option value="6">6 people</option></select></label><label><span>Other guest names</span><input type="text" name="guest" placeholder="Leave blank if attending alone"></label></div>
+              <span>
+                <strong>Happily attending</strong>
+                <small>Count me in for the celebration.</small>
+              </span>
+            </label>
 
-          <fieldset class="dietary-fieldset">
-            <legend>Do you have any dietary requirements?</legend>
-            <p class="fieldset-help">Please select all that apply to your party.</p>
-            <div class="checkbox-grid dietary-options" id="dietary-options">
-              <label><input type="checkbox" name="dietaryType" value="None"><span>No dietary requirements</span></label>
-              <label><input type="checkbox" name="dietaryType" value="Vegetarian"><span>Vegetarian</span></label>
-              <label><input type="checkbox" name="dietaryType" value="Vegan"><span>Vegan</span></label>
-              <label><input type="checkbox" name="dietaryType" value="Gluten-free"><span>Gluten-free</span></label>
-              <label><input type="checkbox" name="dietaryType" value="Dairy-free"><span>Dairy-free</span></label>
-              <label><input type="checkbox" name="dietaryType" value="Nut allergy"><span>Nut allergy</span></label>
-              <label class="checkbox-wide"><input type="checkbox" name="dietaryType" value="Other allergy or dietary requirement"><span>Other allergy or dietary requirement</span></label>
-            </div>
-            <label id="dietary-details-wrap" hidden>
-              <span>Please provide further details, including the severity of any allergy</span>
-              <textarea name="dietaryDetails" rows="4" placeholder="Add any allergy, intolerance or cross-contamination information here."></textarea>
+            <label class="choice-card">
+              <input
+                type="radio"
+                name="attendance"
+                value="no"
+                required
+              >
+
+              <span>
+                <strong>Sadly unable to attend</strong>
+                <small>I will be celebrating from afar.</small>
+              </span>
             </label>
           </fieldset>
 
-          <label><span>Message for Andi &amp; Andrew <small>(optional)</small></span><textarea id="message" name="message" rows="5" maxlength="500"></textarea><small class="character-count"><span id="message-count">0</span>/500</small></label>
-          <button class="button button-primary form-submit" type="submit">Preview my reply</button>
-          <p class="form-help">No information is transmitted or stored online in this demonstration.</p>
+          <div class="form-grid">
+            <label>
+              <span>Full name</span>
+
+              <input
+                type="text"
+                name="name"
+                autocomplete="name"
+                maxlength="120"
+                required
+              >
+            </label>
+
+            <label>
+              <span>Email address</span>
+
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                maxlength="254"
+                required
+              >
+            </label>
+          </div>
+
+          <div id="attending-fields" hidden>
+            <div class="form-grid">
+              <label>
+                <span>Number attending</span>
+
+                <select name="guestCount">
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6">6 people</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Other guest names</span>
+
+                <input
+                  type="text"
+                  name="guestNames"
+                  maxlength="500"
+                  placeholder="Leave blank if attending alone"
+                >
+              </label>
+            </div>
+
+            <fieldset class="dietary-fieldset">
+              <legend>
+                Do you have any dietary requirements?
+              </legend>
+
+              <p class="fieldset-help">
+                Please select all that apply to your party.
+              </p>
+
+              <div
+                class="checkbox-grid dietary-options"
+                id="dietary-options"
+              >
+                <label>
+                  <input
+                    type="checkbox"
+                    name="dietaryType"
+                    value="None"
+                  >
+
+                  <span>No dietary requirements</span>
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="dietaryType"
+                    value="Vegetarian"
+                  >
+
+                  <span>Vegetarian</span>
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="dietaryType"
+                    value="Vegan"
+                  >
+
+                  <span>Vegan</span>
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="dietaryType"
+                    value="Gluten-free"
+                  >
+
+                  <span>Gluten-free</span>
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="dietaryType"
+                    value="Dairy-free"
+                  >
+
+                  <span>Dairy-free</span>
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="dietaryType"
+                    value="Nut allergy"
+                  >
+
+                  <span>Nut allergy</span>
+                </label>
+
+                <label class="checkbox-wide">
+                  <input
+                    type="checkbox"
+                    name="dietaryType"
+                    value="Other allergy or dietary requirement"
+                  >
+
+                  <span>
+                    Other allergy or dietary requirement
+                  </span>
+                </label>
+              </div>
+
+              <label id="dietary-details-wrap" hidden>
+                <span>
+                  Please provide further details, including the severity
+                  of any allergy
+                </span>
+
+                <textarea
+                  name="dietaryDetails"
+                  rows="4"
+                  maxlength="1500"
+                  placeholder="Add any allergy, intolerance or cross-contamination information here."
+                ></textarea>
+              </label>
+            </fieldset>
+          </div>
+
+          <label>
+            <span>
+              Message for Andi &amp; Andrew
+              <small>(optional)</small>
+            </span>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              maxlength="500"
+            ></textarea>
+
+            <small class="character-count">
+              <span id="message-count">0</span>/500
+            </small>
+          </label>
+
+          <button
+            class="button button-primary form-submit"
+            type="submit"
+          >
+            Submit RSVP
+          </button>
+
+          <p class="form-help">
+            Your details will only be used to manage attendance and
+            arrangements for Andi and Andrew’s wedding celebration.
+          </p>
         </form>
 
-        <section class="thank-you-panel" id="thank-you" hidden>
-          <p class="eyebrow">Demo complete</p><h2>Thank you, <span id="saved-name">guest</span>.</h2><p>Your response has been saved in this browser as a preview only. No response was transmitted to Andi or Andrew.</p><button class="button button-ghost" id="edit-response" type="button">Edit response</button>
+        <section
+          class="thank-you-panel"
+          id="thank-you"
+          hidden
+          aria-live="polite"
+        >
+          <p class="eyebrow">
+            RSVP received
+          </p>
+
+          <h2>
+            Thank you, <span id="saved-name">guest</span>.
+          </h2>
+
+          <p>
+            Your RSVP has been received by Andi and Andrew.
+          </p>
+
+          <p>
+            You can return to the form if you need to check or correct
+            the information entered during this visit.
+          </p>
+
+          <button
+            class="button button-ghost"
+            id="edit-response"
+            type="button"
+          >
+            Edit response
+          </button>
+
+          <a
+            class="button button-primary"
+            href="index.html#details"
+          >
+            Back to celebration details
+          </a>
         </section>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><span>Andi & Andrew</span><span>Edinburgh · 2027</span></footer>
+  <footer class="site-footer">
+    <span>Andi &amp; Andrew</span>
+    <span>Edinburgh · 2027</span>
+  </footer>
+
   <script src="script.js"></script>
   <script src="rsvp.js"></script>
 </body>
