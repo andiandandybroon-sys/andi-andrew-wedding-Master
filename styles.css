@@ -35,9 +35,28 @@ p { line-height: 1.75; }
 .hero-image { position: absolute; inset: 0; height: 100%; object-fit: cover; animation: heroZoom 18s ease-in-out infinite alternate; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(4,4,6,.4), rgba(4,4,6,.28) 40%, rgba(4,4,6,.88)), radial-gradient(circle at 50% 42%, transparent, rgba(5,5,8,.62)); }
 .hero-content { z-index: 2; width: min(900px, calc(100% - 36px)); text-align: center; padding-top: 80px; }
-.hero h1 { margin: 0; font-family: "Cormorant Garamond", serif; font-size: clamp(5.2rem, 16vw, 12rem); line-height: .68; font-weight: 600; letter-spacing: -.055em; text-shadow: 0 15px 50px rgba(0,0,0,.55); }
-.hero h1 span { display: block; }
-.hero h1 em { display: block; margin: .18em 0 .12em; color: var(--gold-bright); font-size: .34em; font-weight: 500; }
+.hero h1 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(5.2rem, 16vw, 12rem);
+  line-height: .8;
+  font-weight: 600;
+  letter-spacing: -.055em;
+  text-shadow: 0 15px 50px rgba(0, 0, 0, .55);
+}
+
+.hero h1 span {
+  display: block;
+}
+
+.hero h1 em {
+  display: block;
+  margin: .28em 0 .24em;
+  color: var(--gold-bright);
+  font-size: .34em;
+  line-height: 1;
+  font-weight: 500;
+}
 .hero-line { margin: 42px 0 28px; font-family: "Cormorant Garamond", serif; font-size: clamp(1.55rem, 4vw, 2.5rem); line-height: 1.12; }
 .hero-line strong { color: var(--gold-bright); font-weight: 600; }
 .hero-details { display: flex; justify-content: center; align-items: center; gap: 18px; margin-bottom: 32px; text-transform: uppercase; letter-spacing: .13em; font-size: .72rem; }
@@ -138,7 +157,14 @@ dd { margin: 0; color: rgba(255,255,255,.82); }
   :root { --shell: calc(100% - 24px); }
   .site-header { height: 72px; padding-inline: 18px; }
   .hero-content { padding-top: 70px; }
-  .hero h1 { font-size: clamp(4.8rem, 25vw, 7rem); }
+  .hero h1 {
+    font-size: clamp(4.6rem, 24vw, 6.8rem);
+    line-height: .82;
+  }
+
+  .hero h1 em {
+    margin: .34em 0 .28em;
+  }
   .hero-line { margin-top: 34px; }
   .hero-details { flex-direction: column; gap: 8px; }
   .hero-details i { display: none; }
