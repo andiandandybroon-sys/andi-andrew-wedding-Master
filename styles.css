@@ -331,7 +331,7 @@ dd { margin: 0; color: rgba(255,255,255,.82); }
 }
 
 #dietary-details-wrap textarea:required {
-  border-color: rgba(240,206,139,.45);
+  border-color: rgba(240, 206, 139, 0.45);
 }
 
 @media (max-width: 620px) {
@@ -340,13 +340,19 @@ dd { margin: 0; color: rgba(255,255,255,.82); }
   }
 }
 
-.thank-you-panel .button-ghost {
-  color: var(--ivory);
-  border-color: rgba(255,255,255,.45);
-  background: rgba(255,255,255,.04);
+/* Fix Edit response button visibility */
+#thank-you #edit-response {
+  color: #f6f0e7 !important;
+  -webkit-text-fill-color: #f6f0e7;
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  opacity: 1 !important;
 }
 
-.thank-you-panel .button-ghost:hover {
-  color: var(--ink);
-  background: var(--ivory);
+#thank-you #edit-response:hover,
+#thank-you #edit-response:focus-visible {
+  color: #08080a !important;
+  -webkit-text-fill-color: #08080a;
+  background: #f6f0e7 !important;
+  border-color: #f6f0e7 !important;
 }
