@@ -21,8 +21,16 @@
     <nav id="site-nav" aria-label="Primary navigation">
       <a href="#home">Home</a>
       <a href="#celebration">The night</a>
-      <a href="#entertainment">Entertainment</a>
-      <a href="#food">Food & drink</a>
+
+      <div class="nav-dropdown">
+        <a class="nav-dropdown-main" href="#entertainment">Entertainment</a>
+        <div class="nav-dropdown-menu" aria-label="Entertainment sections">
+          <a href="#entertainment">Casino &amp; Magic</a>
+          <a href="#music">Live Music</a>
+        </div>
+      </div>
+
+      <a href="#food">Food &amp; Drink</a>
       <a href="#venue">Venue &amp; Travel</a>
       <a href="#faq">FAQ</a>
       <a class="nav-cta" href="rsvp.html">RSVP</a>
@@ -174,7 +182,7 @@
     </section>
   </main>
 
-  <a class="back-to-top" href="#top" aria-label="Back to top">↑ <span>Back to top</span></a>
+  <a class="back-to-top" href="#home" aria-label="Back to top">↑ <span>Back to top</span></a>
   <footer class="site-footer"><span>Andi & Andrew</span><span>Edinburgh · 2027</span></footer>
   <script src="script.js"></script>
 </body>
