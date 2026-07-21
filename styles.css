@@ -321,15 +321,32 @@ dd { margin: 0; color: rgba(255,255,255,.82); }
   margin: 0;
   cursor: pointer;
 }
+
 .dietary-options label {
   min-height: 52px;
 }
+
 .dietary-options .checkbox-wide {
   grid-column: 1 / -1;
 }
+
 #dietary-details-wrap textarea:required {
   border-color: rgba(240,206,139,.45);
 }
+
 @media (max-width: 620px) {
-  .dietary-options .checkbox-wide { grid-column: auto; }
+  .dietary-options .checkbox-wide {
+    grid-column: auto;
+  }
+}
+
+.thank-you-panel .button-ghost {
+  color: var(--ivory);
+  border-color: rgba(255,255,255,.45);
+  background: rgba(255,255,255,.04);
+}
+
+.thank-you-panel .button-ghost:hover {
+  color: var(--ink);
+  background: var(--ivory);
 }
